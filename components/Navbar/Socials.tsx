@@ -8,22 +8,22 @@ import { SlSocialLinkedin } from "react-icons/sl";
 
 function Socials() {
   return (
-    <div id="socials" className="flex flex-row gap-3 items-center">
-      <Link href={"https://github.com/uditya69"} target="_blank">
-        <FiGithub size={23} />
+    <div id="socials" className="flex flex-row gap-3 items-center text-gray-400 ">
+      <Link href={"https://github.com/uditya69"} target="_blank" className="hover:text-gray-100 transition duration-500">
+        <FiGithub size={20} />
       </Link>
-      <Link href={"mailto:hi@uditya.xyz"} target="_blank">
-        <IoMailOutline size={30} />
+      <Link href={"mailto:hi@uditya.xyz"} target="_blank" className="hover:text-gray-100 transition duration-500">
+        <IoMailOutline size={25} />
       </Link>
-      <Link href={"https://linkedin.com/in/uditya"} target="_blank">
-        <SlSocialLinkedin size={23} />
+      <Link href={"https://linkedin.com/in/uditya"} target="_blank" className="hover:text-gray-100 transition duration-500">
+        <SlSocialLinkedin size={20} />
       </Link>
-      <Link href={"https://x.com/uditya04"} target="_blank">
-        <RiTwitterXLine size={23} />
+      <Link href={"https://x.com/uditya04"} target="_blank" className="hover:text-gray-100 transition duration-500">
+        <RiTwitterXLine size={20} />
       </Link>
-      <Link href={"https://instagram.com/am_uditya"} target="_blank">
+      <Link href={"https://instagram.com/am_uditya"} target="_blank" className="hover:text-gray-100">
         {" "}
-        <AiOutlineInstagram size={29} />
+        <AiOutlineInstagram size={25} />
       </Link>
       
     </div>

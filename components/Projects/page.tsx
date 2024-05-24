@@ -3,8 +3,11 @@ import Repos from "./Repos";
 
 function page() {
   return (
-    <div>
-      <Repos />
+    <div className="flex flex-col gap-5">
+      <div className="text-xl font-semibold">Projects</div>
+      <div>
+        <Repos />
+      </div>
     </div>
   );
 }

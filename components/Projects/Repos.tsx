@@ -31,7 +31,7 @@ function Repos() {
   }, []);
   return (
     <div>
-      Repos
+      
       {projects.map((project) => (
         <div key={project.id} className=" relative group pt-4 flex flex-col ">
           <img src={project.img} alt={project.name} className="w-full h-auto rounded-md" />
