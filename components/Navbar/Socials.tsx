@@ -12,7 +12,7 @@ function Socials() {
       <Link href={"https://github.com/uditya69"} target="_blank" className="hover:text-gray-100 transition duration-500">
         <FiGithub size={20} />
       </Link>
-      <Link href={"mailto:hi@uditya.xyz"} target="_blank" className="hover:text-gray-100 transition duration-500">
+      <Link href={"mailto:hi@uditya.dev"} target="_blank" className="hover:text-gray-100 transition duration-500">
         <IoMailOutline size={25} />
       </Link>
       <Link href={"https://linkedin.com/in/uditya"} target="_blank" className="hover:text-gray-100 transition duration-500">
@@ -21,7 +21,7 @@ function Socials() {
       <Link href={"https://x.com/uditya04"} target="_blank" className="hover:text-gray-100 transition duration-500">
         <RiTwitterXLine size={20} />
       </Link>
-      <Link href={"https://instagram.com/am_uditya"} target="_blank" className="hover:text-gray-100">
+      <Link href={"https://www.instagram.com/the_noob_clicker/"} target="_blank" className="hover:text-gray-100">
         {" "}
         <AiOutlineInstagram size={25} />
       </Link>

@@ -3,6 +3,7 @@ import { db } from "@/utils/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import React from "react";
 import { LuGithub } from "react-icons/lu";
+import Loader from "../shared/loader";
 
 interface proj {
   id: string;
@@ -21,14 +22,25 @@ async function fetchproject(): Promise<proj[]> {
   return data;
 }
 function Repos() {
+  const [loading,setLoading] = React.useState(true);
   const [projects, setProjects] = React.useState<proj[]>([]);
   React.useEffect(() => {
     async function fetchdata() {
       const data = await fetchproject();
-      setProjects(data);
+      if(data){
+        setProjects(data);
+        setLoading(false);
+      }
     }
     fetchdata();
   }, []);
+
+  if(loading){
+    return(
+      <Loader/>
+    )
+  }
+
   return (
     <div>
       
